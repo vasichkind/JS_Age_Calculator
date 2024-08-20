@@ -1,0 +1,138 @@
+* {
+  font-family: Inter, Tahoma, Geneva, Verdana, sans-serif;
+  font-display: swap;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #001122;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 200px;
+  background-color: #ffffff80;
+  overflow: hidden;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  font-size: 22px;
+  margin-bottom: 40px;
+}
+
+button {
+  width: 100px;
+  height: 40px;
+  border: none;
+  border-radius: 15px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+#calculateBtn {
+  background-color: #001122;
+}
+
+.translate-svg {
+  fill: #001122;
+  transition: fill 0.3s;
+}
+
+.calculate-svg {
+  fill: #ffffff;
+  transition: fill 0.3s;
+}
+
+button:hover .translate-svg,
+button:hover .calculate-svg {
+  fill: #666666;
+}
+
+.tooltip {
+  position: relative;
+}
+
+.tooltip-text {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+.input-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  width: 300px;
+  margin-right: 10px;
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+  color: #001122;
+  border: 2px solid #001122;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+input:focus {
+  font-size: 40px;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+}
+
+.results {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  margin-top: 40px;
+  gap: 10px;
+  font-size: 26px;
+  border-radius: 10px 10px 20px 20px;
+  background-color: #f2f2f2;
+  animation: appearance .3s ease;
+}
+
+@keyframes appearance {
+  0% {
+    opacity: 0;
+    visibility: visible;
+  }
+  100% {
+    opacity: 100%;
+    visibility: visible;
+  }
+}
+
+#resultTitle {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  color: #ffffff;
+  border-radius: 10px 10px 80px 80px;
+  background-color: #333333;
+}
+
+#years,
+#months,
+#days {
+  width: 100%;
+  text-align: center;
+  font-size: 26px;
+  color: #001122;
+}

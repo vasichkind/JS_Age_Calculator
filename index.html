@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Age Calculator</title>
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="title">Калькулятор возраста</h1>
+        <button type="button" id="switch-langBtn" class="tooltip">
+            <svg xmlns="http://www.w3.org/2000/svg" class="translate-svg" width="24" height="24" viewBox="0 0 24 24">
+                <path
+                    d="M24 24h-2.784l-1.07-3h-4.875l-1.077 3h-2.697l4.941-13h2.604l4.958 13zm-4.573-5.069l-1.705-4.903-1.712 4.903h3.417zm-9.252-12.804c.126-.486.201-.852.271-1.212l-2.199-.428c-.036.185-.102.533-.22 1-.742-.109-1.532-.122-2.332-.041.019-.537.052-1.063.098-1.569h2.456v-2.083h-2.161c.106-.531.198-.849.288-1.149l-2.147-.645c-.158.526-.29 1.042-.422 1.794h-2.451v2.083h2.184c-.058.673-.093 1.371-.103 2.077-2.413.886-3.437 2.575-3.437 4.107 0 1.809 1.427 3.399 3.684 3.194 2.802-.255 4.673-2.371 5.77-4.974 1.134.654 1.608 1.753 1.181 2.771-.396.941-1.561 1.838-3.785 1.792v2.242c2.469.038 4.898-.899 5.85-3.166.93-2.214-.132-4.635-2.525-5.793zm-2.892 1.531c-.349.774-.809 1.544-1.395 2.15-.09-.646-.151-1.353-.184-2.108.533-.07 1.072-.083 1.579-.042zm-3.788.724c.062.947.169 1.818.317 2.596-1.996.365-2.076-1.603-.317-2.596zm11.236-1.745l-2.075-5.533 5.414-1.104-.976 1.868c2.999 2.418 4.116 5.645 4.532 8.132-1.736-2.913-3.826-4.478-5.885-5.321l-1.01 1.958zm-7.895 10.781l1.985 5.566-5.43 1.016 1.006-1.852c-2.96-2.465-4.021-5.654-4.397-8.148 1.689 2.94 3.749 4.483 5.794 5.36l1.042-1.942zm10.795-6.029" />
+            </svg>
+            <div class="tooltip-text">Сменить язык</div>
+        </button>
+    </header>
+
+    <div class="input-wrapper">
+        <input type="date" id="date-input">
+        <button type="button" id="calculateBtn">
+            <svg xmlns="http://www.w3.org/2000/svg" class="calculate-svg" width="24" height="24" viewBox="0 0 24 24">
+                <path
+                    d="M24 7v-2c0-2.761-2.238-5-5-5h-14c-2.761 0-5 2.239-5 5v2h10v2h-10v6h4v2h-4v2c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-2h-8v-2h8v-6h-5v-2h5zm-16 11c0 .552-.447 1-1 1s-1-.448-1-1v-4c0-.552.447-1 1-1s1 .448 1 1v4zm3 0c0 .552-.447 1-1 1s-1-.448-1-1v-4c0-.552.447-1 1-1s1 .448 1 1v4zm3 0c0 .552-.447 1-1 1s-1-.448-1-1v-4c0-.552.447-1 1-1s1 .448 1 1v4zm0-8c0 .552-.447 1-1 1s-1-.448-1-1v-4c0-.552.447-1 1-1s1 .448 1 1v4zm3 0c0 .552-.447 1-1 1s-1-.448-1-1v-4c0-.552.447-1 1-1s1 .448 1 1v4z" />
+            </svg>
+        </button>
+    </div>
+    <!-- <div class="results">
+        <p id="resultTitle">Вы живете</p>
+        <p id="years">Лет</p>
+        <p id="months">Месяцев</p>
+        <p id="days">Дней</p>
+    </div> -->
+    <script src="script.js"></script>
+</body>
+
+</html>
